@@ -87,8 +87,8 @@ for (let i = 0; i < team.length; i++) {
                   <div class="card text-black">
                          <img src="img/${currentMember.photo}" alt="...">
                          <div class="card-body">
-                                <h4 class="card-title">${currentMember.name}</h4>
-                                <h5 class="card-text">${currentMember.role}</h5>
+                                <h5 class="card-title p-3">${currentMember.name}</h5>
+                                <h6 class="card-text p-3">${currentMember.role}</h6>
                          </div>
                     </div>    
                </div>`
