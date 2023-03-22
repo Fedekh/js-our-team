@@ -31,36 +31,70 @@
 
 const team = [
     {
-        name : "Wayne Barnett",
-        ruolo : "Founder & CEO",
-        photo : "wayne-barnett-founder-ceo.jpg"
-    },
-    { 
-        name : "Angela Caroll",
-        ruolo : "Chief Editor",
-        photo : "angela-caroll-chief-editor.jpg"
+        name: "Wayne Barnett",
+        role: "Founder & CEO",
+        photo: "wayne-barnett-founder-ceo.jpg"
     },
     {
-        name : "Walter Gordon",
-        ruolo : "Office Manager",
-        photo : "walter-gordon-office-manager.jpg"
+        name: "Angela Caroll",
+        role: "Chief Editor",
+        photo: "angela-caroll-chief-editor.jpg"
     },
     {
-        name : "Angela Lopez",
-        ruolo : "Social Media Manager",
-        photo : "angela-lopez-social-media-manager.jpg"
+        name: "Walter Gordon",
+        role: "Office Manager",
+        photo: "walter-gordon-office-manager.jpg"
     },
     {
-        name : "Scott Estrada",
-        ruolo : "Developer",
-        photo : "scott-estrada-developer.jpg"
+        name: "Angela Lopez",
+        role: "Social Media Manager",
+        photo: "angela-lopez-social-media-manager.jpg"
     },
     {
-        name :"Barbara Ramos",
-        ruolo : "Graphic Designer",
-        photo : "barbara-ramos-graphic-designer.jpg"
+        name: "Scott Estrada",
+        role: "Developer",
+        photo: "scott-estrada-developer.jpg"
+    },
+    {
+        name: "Barbara Ramos",
+        role: "Graphic Designer",
+        photo: "barbara-ramos-graphic-designer.jpg"
     }
-    
+
 ];
 
+// stampo in consile l'array contenente l'oggetto
 console.log(team);
+
+//? ###########################################################################################
+
+
+const h1 = document.querySelector("h1");
+const p = document.querySelector("p");
+
+h1.innerHTML = " OUR TEAM ";
+p.innerHTML = "SUPER LOREM IPSUS";
+
+
+
+//! MILESTONE 2 + BONUS 1 + BONUS 2
+
+const row = document.querySelector(".row");
+let cards = "";
+for (let i = 0; i < team.length; i++) {
+    const currentMember = team[i];
+    cards += `<div class="col">
+                  <div class="card text-black">
+                         <img src="img/${currentMember.photo}" alt="...">
+                         <div class="card-body">
+                                <h4 class="card-title">${currentMember.name}</h4>
+                                <h5 class="card-text">${currentMember.role}</h5>
+                         </div>
+                    </div>    
+               </div>`
+}
+
+row.innerHTML = cards;
+console.log(row);
+
+
