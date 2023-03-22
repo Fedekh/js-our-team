@@ -70,10 +70,10 @@ console.table(team);
 
 
 const h1 = document.querySelector("h1");
-const p = document.querySelector("p");
+const h4 = document.querySelector("h4");
 
 h1.innerHTML = " OUR TEAM ";
-p.innerHTML = "SUPER LOREM IPSUS, DEVELOPERS ESAURITI & SCARSI ";
+h4.innerHTML = "SUPER LOREM IPSUS, DEVELOPERS ESAURITI & SCARSI ";
 
 
 
