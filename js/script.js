@@ -64,7 +64,7 @@ const team = [
 ];
 
 // stampo in consile l'array contenente l'oggetto
-console.log(team);
+console.table(team);
 
 //? ###########################################################################################
 
@@ -73,7 +73,7 @@ const h1 = document.querySelector("h1");
 const p = document.querySelector("p");
 
 h1.innerHTML = " OUR TEAM ";
-p.innerHTML = "SUPER LOREM IPSUS";
+p.innerHTML = "SUPER LOREM IPSUS, DEVELOPERS ESAURITI & SCARSI ";
 
 
 
@@ -85,16 +85,16 @@ for (let i = 0; i < team.length; i++) {
     const currentMember = team[i];
     cards += `<div class="col">
                   <div class="card text-black">
-                         <img src="img/${currentMember.photo}" alt="...">
+                         <img src="img/${team[i].photo}" alt="...">
                          <div class="card-body">
-                                <h4 class="card-title">${currentMember.name}</h4>
-                                <h5 class="card-text">${currentMember.role}</h5>
+                                <h4 class="card-title">${team[i].name}</h4>
+                                <h5 class="card-text">${team[i].role}</h5>
                          </div>
                     </div>    
                </div>`
 }
 
-row.innerHTML = cards;
 console.log(row);
+row.innerHTML = cards;
 
 
