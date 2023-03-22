@@ -85,10 +85,10 @@ for (let i = 0; i < team.length; i++) {
     const currentMember = team[i];
     cards += `<div class="col">
                   <div class="card text-black">
-                         <img src="img/${team[i].photo}" alt="...">
+                         <img src="img/${currentMember.photo}" alt="...">
                          <div class="card-body">
-                                <h4 class="card-title">${team[i].name}</h4>
-                                <h5 class="card-text">${team[i].role}</h5>
+                                <h4 class="card-title">${currentMember.name}</h4>
+                                <h5 class="card-text">${currentMember.role}</h5>
                          </div>
                     </div>    
                </div>`
